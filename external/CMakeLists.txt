@@ -40,4 +40,8 @@ endif()
 
 if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/Vulkan-Headers")
   add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/Vulkan-Headers")
+else()
+  # add Vulkan-Headers from Hunter
+  hunter_add_package(Vulkan-Headers)
+  find_package(Vulkan-Headers CONFIG REQUIRED)
 endif()
