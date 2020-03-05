@@ -21,6 +21,7 @@ include(cmake/HunterGate.cmake)
 HunterGate(
     URL "https://github.com/cpp-pm/hunter/archive/v0.23.250.tar.gz"
     SHA1 "0e6ce3072a280110f33162e0265fb3796652673f"
+    LOCAL
 )
 
 # Apple: Must be set before enable_language() or project() as it may influence configuration of the toolchain and flags.
